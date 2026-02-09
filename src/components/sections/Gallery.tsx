@@ -1,7 +1,6 @@
 "use client";
 
 import { useRef, useState, useEffect } from "react";
-import Image from "next/image";
 import { FaPlay, FaTimes, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const galleryItems = [
@@ -169,14 +168,11 @@ const Gallery = () => {
               }`}
               onClick={() => handleImageClick(item.url, index)}
             >
-              <Image
+              <img
                 src={item.url}
                 alt={item.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                quality={60}
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                 loading="lazy"
-                className="object-cover transition-transform duration-300 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-0 left-0 right-0 p-6">
@@ -227,16 +223,13 @@ const Gallery = () => {
 
           {/* Imagen */}
           <div
-            className="relative max-w-5xl max-h-[90vh] w-full h-full"
+            className="relative max-w-5xl max-h-[90vh] w-full h-full flex items-center justify-center"
             onClick={(e) => e.stopPropagation()}
           >
-            <Image
+            <img
               src={selectedImage}
               alt={filteredItems[selectedIndex].title}
-              fill
-              sizes="90vw"
-              quality={70}
-              className="object-contain"
+              className="max-w-full max-h-[90vh] object-contain"
             />
             {/* Título de la imagen */}
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-6">

@@ -86,14 +86,17 @@ const Navbar = () => {
 
       {/* Mobile Menu Overlay */}
       {isOpen && (
-        <div
-          className="md:hidden fixed inset-0 bg-gradient-to-b from-primary-900 to-secondary-900 z-[55] transition-opacity duration-300"
-          onClick={() => setIsOpen(false)}
-        >
-          <div
-            className="flex flex-col items-center justify-center h-full space-y-8"
-            onClick={(e) => e.stopPropagation()}
+        <div className="md:hidden fixed inset-0 bg-gradient-to-b from-primary-900 to-secondary-900 z-[55] transition-opacity duration-300">
+          {/* Close Button */}
+          <button
+            onClick={() => setIsOpen(false)}
+            className="absolute top-6 right-6 z-[60] text-white hover:text-primary-200 transition-colors text-3xl"
+            aria-label="Cerrar menú"
           >
+            <FaTimes />
+          </button>
+
+          <div className="flex flex-col items-center justify-center h-full space-y-8">
             {navLinks.map((link) => (
               <a
                 key={link.href}
