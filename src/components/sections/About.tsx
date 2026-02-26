@@ -39,8 +39,11 @@ const About = () => {
   return (
     <section
       id="nosotros"
-      className="py-20 bg-gradient-to-br from-secondary-900 to-secondary-800 text-white"
+      className="py-24 bg-secondary-950 text-white relative overflow-hidden"
     >
+      {/* Decorative blur circles */}
+      <div className="absolute top-1/4 -left-32 w-64 h-64 bg-primary-500/10 rounded-full blur-3xl" />
+      <div className="absolute bottom-1/4 -right-32 w-64 h-64 bg-accent-500/10 rounded-full blur-3xl" />
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Left Content */}
@@ -52,8 +55,11 @@ const About = () => {
                 : "opacity-0 translate-y-4"
             }`}
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
-              Sobre <span className="text-primary-400">Nosotros</span>
+            <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
+              Quiénes Somos
+            </span>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6">
+              Sobre <span className="gradient-text">Nosotros</span>
             </h2>
             <p className="text-lg text-gray-300 mb-6">
               Somos especialistas en la planificación y ejecución de eventos
@@ -71,7 +77,7 @@ const About = () => {
 
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <FaCheckCircle className="text-primary-500 text-xl mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
                     Experiencia Comprobada
@@ -82,7 +88,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaCheckCircle className="text-primary-500 text-xl mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
                     Equipo Profesional
@@ -93,7 +99,7 @@ const About = () => {
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <FaCheckCircle className="text-primary-500 text-xl mt-1 flex-shrink-0" />
+                <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
                     Atención Personalizada
@@ -118,7 +124,7 @@ const About = () => {
               <div
                 key={index}
                 style={{ transitionDelay: `${300 + index * 100}ms` }}
-                className={`bg-white/10 backdrop-blur-sm p-8 rounded-2xl text-center hover:bg-white/20 transition-all duration-700 ${
+                className={`bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-2xl text-center hover:bg-white/10 hover:border-primary-500/30 transition-all duration-700 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
                     : "opacity-0 translate-y-6"
