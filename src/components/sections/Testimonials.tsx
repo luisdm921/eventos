@@ -101,8 +101,8 @@ const Testimonials = () => {
 
   return (
     <section className="py-28 bg-secondary-950 relative overflow-hidden">
-      {/* Animated background */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Animated background — hidden on mobile */}
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
         <div className="absolute top-1/4 -left-40 w-[500px] h-[500px] bg-primary-500/[0.07] rounded-full blur-[100px] animate-float" />
         <div className="absolute bottom-1/4 -right-40 w-[400px] h-[400px] bg-violet-500/[0.07] rounded-full blur-[100px] animate-float-slow" />
         {/* Subtle grid pattern */}
@@ -119,8 +119,8 @@ const Testimonials = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div
           ref={ref}
-          className={`text-center mb-20 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mb-20 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
@@ -138,15 +138,15 @@ const Testimonials = () => {
         {/* Featured Testimonial - Cinematic Card */}
         <div className="max-w-5xl mx-auto">
           <div
-            className={`relative transition-all duration-700 ${
+            className={`relative transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-12"
+                : "opacity-0 translate-y-6"
             }`}
-            style={{ transitionDelay: "200ms" }}
+            style={{ transitionDelay: "100ms" }}
           >
             {/* Main card */}
-            <div className="relative bg-white/[0.04] backdrop-blur-xl border border-white/[0.08] rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden group">
+            <div className="relative bg-white/[0.06] md:bg-white/[0.04] md:backdrop-blur-xl border border-white/[0.08] rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden group">
               {/* Gradient accent line at top */}
               <div
                 className={`absolute top-0 left-0 right-0 h-[2px] bg-gradient-to-r ${current.accent} opacity-60`}
@@ -249,12 +249,12 @@ const Testimonials = () => {
 
           {/* Mini cards row */}
           <div
-            className={`grid grid-cols-2 md:grid-cols-4 gap-3 mt-12 transition-all duration-700 ${
+            className={`grid grid-cols-2 md:grid-cols-4 gap-3 mt-12 transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
+                : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: "400ms" }}
+            style={{ transitionDelay: "200ms" }}
           >
             {testimonials.map((t, index) => (
               <button
@@ -299,12 +299,12 @@ const Testimonials = () => {
 
           {/* Trust bar */}
           <div
-            className={`mt-14 flex flex-wrap justify-center items-center gap-8 md:gap-12 transition-all duration-700 ${
+            className={`mt-14 flex flex-wrap justify-center items-center gap-8 md:gap-12 transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-8"
+                : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: "600ms" }}
+            style={{ transitionDelay: "300ms" }}
           >
             <div className="flex items-center gap-3">
               <div className="flex -space-x-2">

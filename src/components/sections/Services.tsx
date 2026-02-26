@@ -113,8 +113,8 @@ const Services = () => {
       id="servicios"
       className="py-24 bg-secondary-950 relative overflow-hidden"
     >
-      {/* Background decoration */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Background decoration — hidden on mobile */}
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary-500/5 rounded-full blur-3xl" />
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-accent-500/5 rounded-full blur-3xl" />
       </div>
@@ -122,8 +122,8 @@ const Services = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div
           ref={ref}
-          className={`text-center mb-20 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+          className={`text-center mb-20 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
@@ -143,11 +143,11 @@ const Services = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              style={{ transitionDelay: `${index * 100}ms` }}
-              className={`group relative bg-secondary-900/50 backdrop-blur-sm border border-white/5 p-8 rounded-2xl transition-all duration-700 hover:border-primary-500/30 hover:bg-secondary-900/80 hover:-translate-y-2 ${
+              style={{ transitionDelay: `${index * 60}ms` }}
+              className={`group relative bg-secondary-900/60 md:bg-secondary-900/50 md:backdrop-blur-sm border border-white/5 p-8 rounded-2xl transition-all duration-500 hover:border-primary-500/30 hover:bg-secondary-900/80 hover:-translate-y-2 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-6"
+                  : "opacity-0 translate-y-4"
               }`}
             >
               {/* Glow effect on hover */}

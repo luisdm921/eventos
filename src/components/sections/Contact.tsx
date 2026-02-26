@@ -93,8 +93,8 @@ const Contact = () => {
       id="contacto"
       className="py-24 bg-secondary-950 relative overflow-hidden"
     >
-      {/* Background decorations */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Background decorations — hidden on mobile */}
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary-500/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/4" />
         <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-accent-500/5 rounded-full blur-3xl translate-y-1/4 -translate-x-1/4" />
       </div>
@@ -102,8 +102,8 @@ const Contact = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mb-16 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
@@ -120,10 +120,10 @@ const Contact = () => {
 
         {/* Contact Cards */}
         <div
-          className={`grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 max-w-4xl mx-auto transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`grid grid-cols-1 md:grid-cols-3 gap-4 mb-16 max-w-4xl mx-auto transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
-          style={{ transitionDelay: "100ms" }}
+          style={{ transitionDelay: "50ms" }}
         >
           {contactCards.map((card, index) => (
             <a
@@ -135,7 +135,7 @@ const Contact = () => {
                   ? "noopener noreferrer"
                   : undefined
               }
-              className="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-primary-500/30 transition-all duration-300"
+              className="group bg-white/[0.07] md:bg-white/5 md:backdrop-blur-sm border border-white/10 rounded-2xl p-6 hover:bg-white/10 hover:border-primary-500/30 transition-all duration-300"
             >
               <div
                 className={`w-12 h-12 bg-gradient-to-br ${card.gradient} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform shadow-lg`}
@@ -159,14 +159,14 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
           {/* Left - Map & Location */}
           <div
-            className={`lg:col-span-2 transition-all duration-700 ${
+            className={`lg:col-span-2 transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 -translate-x-8"
+                : "opacity-0 -translate-x-4"
             }`}
-            style={{ transitionDelay: "200ms" }}
+            style={{ transitionDelay: "100ms" }}
           >
-            <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden h-full flex flex-col">
+            <div className="bg-white/[0.07] md:bg-white/5 md:backdrop-blur-sm border border-white/10 rounded-2xl overflow-hidden h-full flex flex-col">
               {/* Map */}
               <div className="flex-1 min-h-[250px] relative">
                 <iframe
@@ -223,16 +223,16 @@ const Contact = () => {
 
           {/* Right - Contact Form */}
           <div
-            className={`lg:col-span-3 transition-all duration-700 ${
+            className={`lg:col-span-3 transition-all duration-500 ${
               isVisible
                 ? "opacity-100 translate-x-0"
-                : "opacity-0 translate-x-8"
+                : "opacity-0 translate-x-4"
             }`}
-            style={{ transitionDelay: "300ms" }}
+            style={{ transitionDelay: "150ms" }}
           >
             <form
               onSubmit={handleSubmit}
-              className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8"
+              className="bg-white/[0.07] md:bg-white/5 md:backdrop-blur-sm border border-white/10 rounded-2xl p-8"
             >
               <h3 className="text-2xl font-bold text-white mb-6">
                 Solicita tu Cotización

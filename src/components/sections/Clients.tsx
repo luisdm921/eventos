@@ -41,8 +41,8 @@ const Clients = () => {
     >
       <div className="container mx-auto px-4">
         <p
-          className={`text-center text-sm text-secondary-400 uppercase tracking-widest font-medium mb-10 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
+          className={`text-center text-sm text-secondary-400 uppercase tracking-widest font-medium mb-10 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
           }`}
         >
           Empresas que confían en nosotros
@@ -55,7 +55,7 @@ const Clients = () => {
           <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-white to-transparent z-10 pointer-events-none" />
 
           <div
-            className={`flex gap-12 animate-[marquee_30s_linear_infinite] transition-opacity duration-700 ${
+            className={`flex gap-12 animate-[marquee_30s_linear_infinite] transition-opacity duration-500 ${
               isVisible ? "opacity-100" : "opacity-0"
             }`}
           >

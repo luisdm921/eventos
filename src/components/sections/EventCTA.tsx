@@ -43,8 +43,8 @@ const EventCTA = () => {
 
       {/* Content */}
       <div
-        className={`relative z-10 h-full flex flex-col items-center justify-center text-center px-4 transition-all duration-700 ${
-          isVisible ? "opacity-100 scale-100" : "opacity-0 scale-95"
+        className={`relative z-10 h-full flex flex-col items-center justify-center text-center px-4 transition-all duration-500 ${
+          isVisible ? "opacity-100 scale-100" : "opacity-0 scale-[0.97]"
         }`}
       >
         <p className="text-primary-400 font-semibold text-sm uppercase tracking-widest mb-4">

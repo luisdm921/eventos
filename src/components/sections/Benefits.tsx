@@ -102,8 +102,8 @@ const Benefits = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div
           ref={ref}
-          className={`text-center mb-20 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mb-20 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-500 font-semibold tracking-wider uppercase text-sm mb-4">
@@ -122,13 +122,13 @@ const Benefits = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className={`group relative bg-white rounded-2xl border border-gray-100 p-8 transition-all duration-700 hover:shadow-xl hover:shadow-primary-500/5 hover:border-primary-200 hover:-translate-y-1 ${
+              className={`group relative bg-white rounded-2xl border border-gray-100 p-8 transition-all duration-500 hover:shadow-xl hover:shadow-primary-500/5 hover:border-primary-200 hover:-translate-y-1 ${
                 isVisible
                   ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-8"
+                  : "opacity-0 translate-y-4"
               }`}
               style={{
-                transitionDelay: `${index * 80}ms`,
+                transitionDelay: `${index * 50}ms`,
               }}
             >
               {/* Top accent line */}
@@ -162,10 +162,10 @@ const Benefits = () => {
 
         {/* Premium CTA Section */}
         <div
-          className={`mt-20 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`mt-20 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
-          style={{ transitionDelay: "600ms" }}
+          style={{ transitionDelay: "300ms" }}
         >
           <div className="relative rounded-3xl overflow-hidden">
             {/* Background image */}

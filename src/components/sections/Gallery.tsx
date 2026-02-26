@@ -110,10 +110,10 @@ const Gallery = () => {
     index: number;
   }) => (
     <div
-      className={`relative group overflow-hidden rounded-2xl cursor-pointer h-full transition-all duration-700 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+      className={`relative group overflow-hidden rounded-2xl cursor-pointer h-full transition-all duration-500 ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
       }`}
-      style={{ transitionDelay: `${index * 100}ms` }}
+      style={{ transitionDelay: `${index * 60}ms` }}
       onClick={() => openLightbox(index)}
     >
       <img
@@ -145,8 +145,8 @@ const Gallery = () => {
       <div className="container mx-auto px-4">
         <div
           ref={ref}
-          className={`text-center mb-16 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mb-16 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">

@@ -71,8 +71,8 @@ const Process = () => {
 
   return (
     <section className="py-28 bg-secondary-950 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 pointer-events-none">
+      {/* Background — hidden on mobile */}
+      <div className="absolute inset-0 pointer-events-none hidden md:block">
         <div className="absolute top-0 left-1/4 w-[600px] h-[600px] bg-primary-500/[0.04] rounded-full blur-[120px]" />
         <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] bg-violet-500/[0.04] rounded-full blur-[100px]" />
       </div>
@@ -80,8 +80,8 @@ const Process = () => {
       <div className="container mx-auto px-4 relative z-10">
         <div
           ref={ref}
-          className={`text-center mb-20 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mb-20 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
@@ -104,15 +104,15 @@ const Process = () => {
             {steps.map((step, index) => (
               <div
                 key={index}
-                className={`relative transition-all duration-700 ${
+                className={`relative transition-all duration-500 ${
                   isVisible
                     ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
+                    : "opacity-0 translate-y-4"
                 }`}
-                style={{ transitionDelay: `${index * 150}ms` }}
+                style={{ transitionDelay: `${index * 80}ms` }}
               >
                 {/* Step card */}
-                <div className="group relative bg-white/[0.03] backdrop-blur-sm border border-white/[0.06] rounded-2xl p-6 hover:bg-white/[0.06] hover:border-white/10 transition-all duration-500 h-full">
+                <div className="group relative bg-white/[0.04] md:bg-white/[0.03] md:backdrop-blur-sm border border-white/[0.06] rounded-2xl p-6 hover:bg-white/[0.06] hover:border-white/10 transition-all duration-300 h-full">
                   {/* Number + Icon */}
                   <div className="flex items-center gap-3 mb-5">
                     <div
@@ -156,10 +156,10 @@ const Process = () => {
 
         {/* Bottom CTA */}
         <div
-          className={`text-center mt-16 transition-all duration-700 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-center mt-16 transition-all duration-500 ${
+            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
           }`}
-          style={{ transitionDelay: "600ms" }}
+          style={{ transitionDelay: "350ms" }}
         >
           <p className="text-gray-500 text-sm">
             ¿Listo para empezar? El primer paso es una conversación.
