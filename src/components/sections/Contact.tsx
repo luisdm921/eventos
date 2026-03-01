@@ -107,14 +107,14 @@ const Contact = () => {
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-            Contacto
+            Empieza hoy
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Hablemos de tu
-            <span className="gradient-text"> Próximo Evento</span>
+            Tu Próximo Evento Exitoso
+            <span className="gradient-text"> Empieza Aquí</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Estamos listos para diseñar la experiencia perfecta para tu empresa
+            Completa el formulario y recibe una propuesta personalizada en menos de 48 horas. Sin compromiso, sin letra chica.
           </p>
         </div>
 
@@ -234,9 +234,12 @@ const Contact = () => {
               onSubmit={handleSubmit}
               className="bg-white/[0.07] md:bg-white/5 md:backdrop-blur-sm border border-white/10 rounded-2xl p-8"
             >
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Solicita tu Cotización
+              <h3 className="text-2xl font-bold text-white mb-2">
+                Recibe tu Cotización en 48h
               </h3>
+              <p className="text-gray-400 text-sm mb-6">
+                Solo necesitamos 2 minutos de tu tiempo. Nosotros hacemos el resto.
+              </p>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
                 <div>
@@ -399,10 +402,10 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold py-4 px-8 rounded-xl transition-all duration-300 hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] flex items-center justify-center gap-3 text-lg btn-shimmer"
               >
-                <FaPaperPlane /> Enviar Solicitud
+                <FaPaperPlane /> Recibir Mi Propuesta Gratis
               </button>
               <p className="text-gray-500 text-xs text-center mt-3">
-                Respuesta garantizada en menos de 24 horas hábiles
+                ✅ Respuesta garantizada en menos de 48h — Sin compromiso, sin spam
               </p>
             </form>
           </div>

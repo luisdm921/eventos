@@ -5,7 +5,7 @@ import { FaWhatsapp } from "react-icons/fa";
 const WhatsAppButton = () => {
   const phoneNumber = "528445841876"; // Número de WhatsApp
   const message =
-    "Hola! Me gustaría información sobre sus servicios de eventos.";
+    "Hola! Quiero cotizar un evento corporativo. ¿Tienen disponibilidad?";
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
   return (
@@ -18,7 +18,7 @@ const WhatsAppButton = () => {
     >
       <FaWhatsapp className="text-2xl md:text-3xl" />
       <span className="hidden md:block absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-slate-800 text-white px-3 py-2 rounded-lg text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none">
-        ¡Contáctanos!
+        ¿Listo para cotizar? ¡Escríbenos!
       </span>
     </a>
   );

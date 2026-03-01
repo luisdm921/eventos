@@ -13,38 +13,38 @@ const steps = [
   {
     number: "01",
     icon: FaComments,
-    title: "Consulta",
+    title: "Cuéntanos tu Idea",
     description:
-      "Escuchamos tus objetivos, audiencia y visión. Entendemos a fondo lo que necesitas para diseñar la estrategia perfecta.",
+      "Una llamada de 15 minutos es todo lo que necesitamos. Tú nos dices qué quieres lograr, nosotros te decimos cómo hacerlo realidad.",
     accent: "from-primary-400 to-orange-500",
-    detail: "Reunión sin costo",
+    detail: "Gratis y sin compromiso",
   },
   {
     number: "02",
     icon: FaPencilRuler,
-    title: "Diseño",
+    title: "Recibe tu Propuesta",
     description:
-      "Conceptualizamos cada detalle: temática, logística, experiencia del asistente y propuesta económica a tu medida.",
+      "En 48 horas tienes una propuesta completa: concepto, logística, experiencia del asistente y presupuesto transparente. Sin sorpresas.",
     accent: "from-violet-400 to-purple-500",
     detail: "Propuesta en 48h",
   },
   {
     number: "03",
     icon: FaCogs,
-    title: "Producción",
+    title: "Nosotros Hacemos Todo",
     description:
-      "Nuestro equipo ejecuta toda la logística, proveedores, montaje, tecnología y coordinación en tiempo perfecto.",
+      "Proveedores, montaje, tecnología, coordinación… todo corre por nuestra cuenta. Tú solo apruebas y nosotros ejecutamos.",
     accent: "from-cyan-400 to-blue-500",
-    detail: "Gestión integral",
+    detail: "0 estrés para ti",
   },
   {
     number: "04",
     icon: FaGlassCheers,
-    title: "Tu Evento",
+    title: "Disfruta los Resultados",
     description:
-      "El gran día llega sin estrés para ti. Supervisamos cada momento para que solo disfrutes los resultados.",
+      "Llega, disfruta y llévate el crédito. Tu equipo y directivos quedarán impresionados. Nosotros nos encargamos de cada detalle.",
     accent: "from-emerald-400 to-green-500",
-    detail: "Ejecución impecable",
+    detail: "Tú te llevas el crédito",
   },
 ];
 
@@ -85,13 +85,13 @@ const Process = () => {
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-            Proceso
+            Así de fácil
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            De la idea al <span className="gradient-text">evento perfecto</span>
+            De tu idea a un <span className="gradient-text">evento impecable</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Un proceso probado en +800 eventos que garantiza resultados
+            4 pasos simples. Tú pones la visión, nosotros ponemos los 15 años de experiencia. Sin complicaciones.
           </p>
         </div>
 
@@ -161,9 +161,18 @@ const Process = () => {
           }`}
           style={{ transitionDelay: "350ms" }}
         >
-          <p className="text-gray-500 text-sm">
-            ¿Listo para empezar? El primer paso es una conversación.
+          <p className="text-gray-400 text-sm mb-4">
+            ¿Listo para empezar? El primer paso es una conversación de 15 minutos.
           </p>
+          <a
+            href="https://wa.me/528445841876?text=Hola%2C%20quiero%20agendar%20una%20consulta%20gratuita%20para%20mi%20evento"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-gradient-to-r from-primary-500 to-primary-600 text-white px-6 py-3 rounded-full font-semibold text-sm hover:shadow-[0_0_30px_rgba(249,115,22,0.3)] transition-all duration-300 hover:scale-105"
+          >
+            <FaArrowRight className="text-xs" />
+            Agenda tu Consulta Gratis
+          </a>
         </div>
       </div>
     </section>

@@ -78,7 +78,7 @@ const Navbar = () => {
                 }`}
               >
                 <FaWhatsapp className="text-sm" />
-                Cotizar Evento
+                Cotiza Gratis
               </a>
             </div>
 
@@ -132,7 +132,7 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               <FaWhatsapp className="text-xl" />
-              Cotizar Evento
+              Cotiza Gratis Ahora
             </a>
           </div>
         </div>

@@ -150,13 +150,13 @@ const Gallery = () => {
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-            Portfolio
+            Eventos reales, resultados reales
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Momentos que <span className="gradient-text">Inspiran</span>
+            Así Lucen Nuestros <span className="gradient-text">Eventos</span>
           </h2>
           <p className="text-lg text-secondary-400 max-w-2xl mx-auto">
-            Cada imagen cuenta la historia de un evento irrepetible
+            No son fotos de stock. Son eventos reales de clientes reales que confiaron en nosotros.
           </p>
         </div>
 

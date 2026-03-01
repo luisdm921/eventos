@@ -124,14 +124,14 @@ const Testimonials = () => {
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-            Testimonios
+            Resultados comprobados
           </span>
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Clientes que
-            <span className="gradient-text"> confían</span> en nosotros
+            Empresas que ya
+            <span className="gradient-text"> dejaron de preocuparse</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            +300 empresas ya vivieron la experiencia Premium Events
+            +300 empresas delegaron sus eventos en nosotros y obtuvieron mejores resultados con menos esfuerzo
           </p>
         </div>
 

@@ -58,23 +58,21 @@ const About = () => {
             }`}
           >
             <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-              Quiénes Somos
+              Por qué existimos
             </span>
             <h2 className="text-4xl md:text-6xl font-bold mb-6">
-              Sobre <span className="gradient-text">Nosotros</span>
+              Nacimos para <span className="gradient-text">Quitarte el Estrés</span>
             </h2>
             <p className="text-lg text-gray-300 mb-6">
-              Somos especialistas en la planificación y ejecución de eventos
-              corporativos que generan impacto. Con más de 15 años de
-              experiencia, ayudamos a empresas a alcanzar sus objetivos de
-              negocio a través de experiencias memorables.
+              Sabemos que organizar un evento corporativo internamente es una pesadilla:
+              semanas de coordinación, proveedores impredecibles, presupuestos que se disparan
+              y el riesgo de que algo salga mal frente a tu jefe.
             </p>
             <p className="text-lg text-gray-300 mb-6">
-              Desde conferencias internacionales hasta programas de team
-              building, manejamos cada aspecto logístico y creativo para
-              garantizar el éxito de tu evento. Nuestro equipo de expertos
-              trabaja de cerca con tu organización para entender tus necesidades
-              y superar expectativas.
+              Por eso creamos Premium Events: para que tú —el profesional de RRHH,
+              marketing o dirección— puedas delegar TODO y presentar un evento impecable
+              sin perder noches de sueño. Con 15+ años y 800+ eventos, tu reputación está en
+              buenas manos.
             </p>
 
             <div className="space-y-4">
@@ -82,10 +80,10 @@ const About = () => {
                 <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
-                    Experiencia Comprobada
+                    0 Eventos Fallidos
                   </h4>
                   <p className="text-gray-400">
-                    Más de una década creando eventos exitosos
+                    800+ eventos ejecutados sin un solo fallo crítico
                   </p>
                 </div>
               </div>
@@ -93,10 +91,10 @@ const About = () => {
                 <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
-                    Equipo Profesional
+                    Equipo de Élite
                   </h4>
                   <p className="text-gray-400">
-                    Expertos en planificación, diseño y ejecución
+                    Coordinadores, productores y creativos top
                   </p>
                 </div>
               </div>
@@ -104,10 +102,10 @@ const About = () => {
                 <FaCheckCircle className="text-primary-400 text-xl mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-lg mb-1">
-                    Atención Personalizada
+                    Tu Evento = Nuestra Prioridad
                   </h4>
                   <p className="text-gray-400">
-                    Cada evento es único y tratado con dedicación especial
+                    Máximo 4 eventos simultáneos para darte 100%
                   </p>
                 </div>
               </div>

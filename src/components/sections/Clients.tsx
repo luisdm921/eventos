@@ -45,7 +45,7 @@ const Clients = () => {
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-2"
           }`}
         >
-          Empresas que confían en nosotros
+          Estas empresas ya dejaron de organizar eventos internamente
         </p>
 
         {/* Infinite scroll marquee */}

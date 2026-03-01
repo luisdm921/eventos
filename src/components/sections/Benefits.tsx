@@ -15,51 +15,51 @@ import {
 const benefits = [
   {
     icon: FaClock,
-    title: "Ahorro de Tiempo",
+    title: "Recupera 40% de tu Tiempo",
     description:
-      "Nos encargamos de toda la logística para que tu equipo se enfoque en lo importante.",
+      "Deja de perseguir proveedores y coordinar logística. Tu equipo se enfoca en lo que genera ingresos, no en montar sillas.",
     stat: "40%",
-    statLabel: "menos tiempo de gestión",
+    statLabel: "menos tiempo en logística",
   },
   {
     icon: FaShieldAlt,
-    title: "Garantía de Calidad",
+    title: "Cero Riesgo, Cero Sorpresas",
     description:
-      "Más de 15 años respaldando eventos corporativos exitosos para empresas líderes.",
+      "800+ eventos sin un solo fallo crítico. Nuestra experiencia de 15 años es tu garantía de que todo saldrá perfecto.",
     stat: "15+",
-    statLabel: "años de experiencia",
+    statLabel: "años sin fallos críticos",
   },
   {
     icon: FaHeadset,
-    title: "Soporte 24/7",
+    title: "Soporte Real 24/7",
     description:
-      "Asistencia continua antes, durante y después del evento para tu tranquilidad.",
+      "Una persona real contesta tu llamada a cualquier hora. Antes, durante y después del evento. Sin bots, sin esperas.",
     stat: "24/7",
-    statLabel: "disponibilidad total",
+    statLabel: "persona real, no un bot",
   },
   {
     icon: FaChartLine,
-    title: "ROI Medible",
+    title: "ROI 3x Comprobado",
     description:
-      "Métricas y reportes detallados del impacto y resultados de tu evento corporativo.",
+      "Nuestros clientes reportan un retorno 3 veces mayor vs. organizar eventos internamente. Números reales, no promesas.",
     stat: "3x",
-    statLabel: "retorno de inversión",
+    statLabel: "retorno de inversión promedio",
   },
   {
     icon: FaUserTie,
-    title: "Coordinador Dedicado",
+    title: "Tu Coordinador Exclusivo",
     description:
-      "Un profesional asignado exclusivamente a tu proyecto desde inicio a fin.",
+      "Un profesional dedicado 100% a TU evento. No compartido con 20 proyectos. Atención personalizada de inicio a fin.",
     stat: "1:1",
-    statLabel: "atención personalizada",
+    statLabel: "coordinador dedicado sólo a ti",
   },
   {
     icon: FaTools,
-    title: "Tecnología Avanzada",
+    title: "Tecnología que Impresiona",
     description:
-      "Equipamiento audiovisual de última generación y plataformas digitales integradas.",
+      "Equipamiento audiovisual de última generación que hace que tus asistentes digan \"wow\". Incluido en tu presupuesto.",
     stat: "100%",
-    statLabel: "equipo de vanguardia",
+    statLabel: "tecnología incluida",
   },
 ];
 
@@ -107,14 +107,13 @@ const Benefits = () => {
           }`}
         >
           <span className="inline-block text-primary-500 font-semibold tracking-wider uppercase text-sm mb-4">
-            Ventajas
+            Lo que ganas al contratarnos
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-secondary-900 mb-6">
-            ¿Por Qué <span className="gradient-text">Elegirnos</span>?
+            Resultados Reales, <span className="gradient-text">No Promesas</span>
           </h2>
           <p className="text-lg text-secondary-500 max-w-3xl mx-auto leading-relaxed">
-            Somos el socio estratégico que tu empresa necesita para crear
-            eventos corporativos que dejan huella
+            Cada beneficio está respaldado por datos de +800 eventos. Así es como tu empresa gana cuando trabajas con nosotros.
           </p>
         </div>
 
@@ -181,12 +180,12 @@ const Benefits = () => {
             <div className="relative z-10 py-16 px-8 md:px-16 flex flex-col md:flex-row items-center justify-between gap-8">
               <div className="text-center md:text-left max-w-2xl">
                 <h3 className="text-3xl md:text-4xl font-bold text-white mb-4 leading-tight">
-                  ¿Listo para tu Próximo
-                  <span className="gradient-text"> Evento Corporativo</span>?
+                  Cada Mes que Pasa Sin un Buen Evento,
+                  <span className="gradient-text"> Pierdes Oportunidades</span>
                 </h3>
                 <p className="text-lg text-gray-300">
-                  Conversemos sobre cómo podemos hacer que tu evento sea un
-                  éxito rotundo. Primera consulta sin compromiso.
+                  Agenda una consulta gratuita de 15 minutos. Sin compromiso, sin presiones.
+                  Te mostramos exactamente cómo podemos ayudarte.
                 </p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
@@ -197,7 +196,7 @@ const Benefits = () => {
                   className="group bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] transition-all duration-300 hover:scale-105 btn-shimmer flex items-center gap-3 whitespace-nowrap"
                 >
                   <FaWhatsapp className="text-xl" />
-                  Agendar Consulta
+                  Quiero Mi Consulta Gratis
                   <FaArrowRight className="transition-transform group-hover:translate-x-1" />
                 </a>
               </div>

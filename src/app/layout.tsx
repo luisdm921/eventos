@@ -13,9 +13,9 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Premium Events - Eventos Corporativos de Alto Impacto",
+  title: "Premium Events - Eventos Corporativos Sin Estrés | Propuesta en 48h",
   description:
-    "Especialistas en organización de eventos corporativos, conferencias, team building y capacitaciones empresariales. Soluciones integrales para tu empresa con más de 15 años de experiencia y 800+ eventos exitosos.",
+    "Deja de perder tiempo organizando eventos. Nosotros nos encargamos de toda la logística, producción y coordinación. +800 eventos exitosos, ROI 3x comprobado. Cotiza gratis hoy.",
   keywords:
     "eventos corporativos, conferencias empresariales, team building, capacitaciones, lanzamientos de producto, eventos de negocios, networking empresarial, organización de eventos, eventos profesionales, congresos empresariales",
   authors: [{ name: "Premium Events" }],
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.premiumevents.com",
     siteName: "Premium Events",
-    title: "Premium Events - Eventos Corporativos de Alto Impacto",
+    title: "Premium Events - Eventos Corporativos Sin Estrés | Propuesta en 48h",
     description:
-      "Especialistas en organización de eventos corporativos, conferencias, team building y capacitaciones empresariales. +15 años de experiencia, 800+ eventos exitosos.",
+      "Deja de perder tiempo organizando eventos. +800 eventos exitosos, ROI 3x comprobado. Cotiza gratis hoy.",
     images: [
       {
         url: "/images/al-elmes-ULHxWq8reao-unsplash.webp",
@@ -51,9 +51,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Premium Events - Eventos Corporativos de Alto Impacto",
+    title: "Premium Events - Eventos Corporativos Sin Estrés",
     description:
-      "Especialistas en organización de eventos corporativos. +15 años de experiencia, 800+ eventos exitosos.",
+      "Deja de perder tiempo organizando eventos. +800 eventos exitosos, ROI 3x comprobado. Cotiza gratis.",
     images: ["/images/al-elmes-ULHxWq8reao-unsplash.webp"],
     creator: "@premiumevents",
   },

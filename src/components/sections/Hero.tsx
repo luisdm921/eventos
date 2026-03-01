@@ -10,9 +10,9 @@ import {
 import { useState, useEffect } from "react";
 
 const stats = [
-  { number: "800+", label: "Eventos Exitosos" },
-  { number: "300+", label: "Empresas" },
-  { number: "98%", label: "Satisfacción" },
+  { number: "800+", label: "Eventos Sin Estrés" },
+  { number: "3x", label: "ROI Promedio" },
+  { number: "98%", label: "Clientes Repiten" },
 ];
 
 const Hero = () => {
@@ -57,7 +57,7 @@ const Hero = () => {
         >
           <span className="w-2 h-2 bg-primary-400 rounded-full animate-pulse" />
           <span className="text-primary-200 text-sm font-medium tracking-wide">
-            +15 Años Creando Experiencias Extraordinarias
+            +800 Eventos Corporativos Exitosos — 0 Dolores de Cabeza
           </span>
         </div>
 
@@ -66,9 +66,9 @@ const Hero = () => {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
           }`}
         >
-          Eventos que
+          Deja de Perder Tiempo
           <br />
-          <span className="gradient-text">Transforman Negocios</span>
+          <span className="gradient-text">Organizando Eventos</span>
         </h1>
 
         <p
@@ -76,9 +76,9 @@ const Hero = () => {
             mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3"
           }`}
         >
-          Diseñamos y producimos eventos corporativos que generan impacto real:
-          conferencias, team building y experiencias que conectan personas e
-          impulsan resultados.
+          Nosotros nos encargamos de <strong className="text-white">toda la logística, producción y coordinación</strong> de tu evento corporativo.
+          Tú solo llegas, disfrutas los resultados y te llevas el crédito.
+          Propuesta personalizada en 48 horas.
         </p>
 
         {/* CTA Buttons */}
@@ -94,7 +94,7 @@ const Hero = () => {
             className="group relative bg-gradient-to-r from-primary-500 to-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all duration-300 hover:shadow-[0_0_40px_rgba(249,115,22,0.4)] hover:scale-105 btn-shimmer flex items-center gap-3"
           >
             <FaWhatsapp className="text-xl" />
-            Agenda tu Evento
+            Cotiza Gratis en 5 Min
             <FaArrowRight className="transition-transform group-hover:translate-x-1" />
           </a>
           <button
@@ -104,7 +104,7 @@ const Hero = () => {
             <span className="w-10 h-10 bg-white/20 rounded-full flex items-center justify-center group-hover:bg-primary-500 transition-colors">
               <FaPlay className="text-sm ml-0.5" />
             </span>
-            Ver Showreel
+            Ver Eventos Reales
           </button>
         </div>
 

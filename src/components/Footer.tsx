@@ -38,8 +38,8 @@ const Footer = () => {
               <span className="text-primary-400">Premium</span> Events
             </h3>
             <p className="text-gray-400 mb-6 text-sm leading-relaxed">
-              Diseñamos experiencias corporativas que impulsan resultados,
-              inspiran equipos y posicionan marcas.
+              +800 eventos corporativos exitosos. Deja de estresarte organizando
+              eventos y deja que expertos con 15+ años se encarguen de todo.
             </p>
             <div className="flex gap-3">
               {socials.map((social) => (

@@ -14,73 +14,74 @@ import {
 const services = [
   {
     icon: FaBriefcase,
-    title: "Conferencias y Convenciones",
+    title: "Conferencias que Generan Negocios",
     description:
-      "Eventos corporativos de alto nivel que impulsan el networking y el conocimiento.",
+      "Deja de organizar conferencias que nadie recuerda. Creamos eventos donde tus asistentes hacen contactos reales y cierran tratos.",
     features: [
-      "Gestión integral del evento",
-      "Tecnología audiovisual avanzada",
-      "Logística y coordinación",
+      "Networking estratégico con ROI medible",
+      "Tecnología audiovisual que impresiona",
+      "Tú no mueves un dedo: gestión 100% integral",
     ],
     gradient: "from-primary-500 to-primary-600",
     bgGlow: "bg-primary-500/10",
   },
   {
     icon: FaUsers,
-    title: "Team Building",
+    title: "Team Building que Sí Funciona",
     description:
-      "Fortalece equipos con actividades diseñadas para mejorar la colaboración.",
+      "Olvida las dinámicas aburridas. Diseñamos experiencias que realmente mejoran la colaboración y se notan en la productividad.",
     features: [
-      "Dinámicas personalizadas",
-      "Facilitadores expertos",
-      "Medición de resultados",
+      "Actividades con impacto medible",
+      "Facilitadores expertos en equipos",
+      "Reportes de resultados post-evento",
     ],
     gradient: "from-accent-500 to-accent-600",
     bgGlow: "bg-accent-500/10",
   },
   {
     icon: FaChartLine,
-    title: "Lanzamientos de Producto",
+    title: "Lanzamientos que Venden",
     description:
-      "Presentaciones impactantes que generan expectativa y engagement.",
+      "Tu producto merece un debut que genere ventas, no solo aplausos. Creamos la expectativa que convierte asistentes en compradores.",
     features: [
-      "Producción audiovisual",
-      "Marketing experiencial",
-      "Relaciones públicas",
+      "Producción audiovisual cinematográfica",
+      "Marketing experiencial que convierte",
+      "Cobertura mediática incluida",
     ],
     gradient: "from-cyan-500 to-blue-500",
     bgGlow: "bg-cyan-500/10",
   },
   {
     icon: FaLightbulb,
-    title: "Capacitaciones y Talleres",
+    title: "Capacitaciones que Retienen",
     description:
-      "Espacios de aprendizaje diseñados para maximizar la retención.",
+      "El 80% de lo aprendido en talleres genéricos se olvida en una semana. Los nuestros están diseñados para que el conocimiento se quede.",
     features: [
-      "Espacios equipados",
-      "Material didáctico",
-      "Logística de participantes",
+      "Espacios equipados para el aprendizaje",
+      "Metodologías de retención comprobadas",
+      "Materiales listos para tu equipo",
     ],
     gradient: "from-violet-500 to-purple-500",
     bgGlow: "bg-violet-500/10",
   },
   {
     icon: FaAward,
-    title: "Eventos de Reconocimiento",
+    title: "Premiaciones que Motivan de Verdad",
     description:
-      "Celebra logros y motiva a tu equipo con ceremonias memorables.",
-    features: ["Galas corporativas", "Premiaciones", "Cenas de gala"],
+      "Una gala bien hecha retiene talento mejor que un aumento. Creamos ceremonias que hacen que tu equipo se sienta valorado.",
+    features: ["Galas corporativas de primer nivel", "Premiaciones con impacto emocional", "Cenas de gala memorables"],
     gradient: "from-rose-500 to-pink-500",
     bgGlow: "bg-rose-500/10",
   },
   {
     icon: FaHandshake,
-    title: "Networking Empresarial",
-    description: "Facilita conexiones valiosas entre profesionales y empresas.",
+    title: "Networking que Cierra Deals",
+    description:
+      "Conectar a las personas correctas en el momento correcto. Nuestros eventos generan las relaciones que tu negocio necesita.",
     features: [
-      "Mixers corporativos",
-      "Desayunos ejecutivos",
-      "Eventos de industria",
+      "Mixers diseñados para cerrar negocios",
+      "Desayunos ejecutivos de alto nivel",
+      "Eventos de industria con decisores",
     ],
     gradient: "from-emerald-500 to-teal-500",
     bgGlow: "bg-emerald-500/10",
@@ -127,15 +128,14 @@ const Services = () => {
           }`}
         >
           <span className="inline-block text-primary-400 font-semibold tracking-wider uppercase text-sm mb-4">
-            Lo que hacemos
+            Soluciones que generan resultados
           </span>
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            Servicios que
-            <span className="gradient-text"> Inspiran</span>
+            Cada Evento Resuelve
+            <span className="gradient-text"> un Problema Real</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            Ofrecemos una amplia gama de servicios para hacer de tu evento
-            corporativo algo extraordinario
+            No vendemos “eventos bonitos”. Diseñamos experiencias corporativas con objetivos claros: más ventas, mejores equipos, mayor retención de talento.
           </p>
         </div>
 
@@ -185,10 +185,12 @@ const Services = () => {
                 </ul>
 
                 <a
-                  href="#contacto"
+                  href="https://wa.me/528445841876?text=Hola%2C%20me%20interesa%20el%20servicio%20de%20" 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 text-primary-400 font-medium text-sm hover:text-primary-300 transition-colors group/link"
                 >
-                  Saber más
+                  Cotizar este servicio
                   <FaArrowRight className="text-xs transition-transform group-hover/link:translate-x-1" />
                 </a>
               </div>
